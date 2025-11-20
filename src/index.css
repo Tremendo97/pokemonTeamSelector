@@ -1,0 +1,45 @@
+body{
+    margin: 0; 
+    background-color: rgb(49, 49, 49);
+    font-family: system-ui; 
+    display: flex; 
+    min-height: 100vh; 
+}
+.forPokeball{
+    background-image: url(../recursos/fondo_pokeball.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    
+}
+.seleccionDePokemon{
+    background-color: rgba(0, 0, 0, 0.432);
+    width: 350px;
+    height: 90vh;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 10px;
+    overflow-x: scroll;
+}
+.seleccionDePokemon::-webkit-scrollbar {
+    display: none;
+}
+.contendorAppEquipo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.equipo{
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0.433);
+    border-radius: 20px;
+}
+.centrarContenido{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
