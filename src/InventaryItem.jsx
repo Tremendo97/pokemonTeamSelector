@@ -5,7 +5,7 @@ export function InventaryItem ({habilidad, name, imgItem}) {
   const {arrayPokemon,setPokemonInTeam}= useContext(teamContext)
 
   const [inTeam, setInTeam] = useState(false)
-  
+
   const seleceted = inTeam ? 'In Team' : 'Add'
   const buttonClass = inTeam ? 'select-button-inTeam' : 'select-button'
 
@@ -17,13 +17,13 @@ export function InventaryItem ({habilidad, name, imgItem}) {
     else{
       setPokemonInTeam(imgItem, name, false)
     }
-    
+
   }
 
   return (
     <article className='each-pokemon'>
       <header className='header-each-pokemon'>
-        <img className='imgen-pokemon'alt="imgen del pokemon" src={imgItem}/>
+        <img className='imgen-pokemon'alt="imagen del pokemon" src="recursos/fondo_pokeball.png"/>
         <div className='pokemon-info'>
           <strong>{name}</strong>
           <span className='InvenatryItem-habilidad'>{habilidad}</span>
